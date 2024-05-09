@@ -77,7 +77,7 @@ impl SearchEngine {
     for (id, text) in self.documents.iter().enumerate() {
       let ngrams = self.config.generate_ngrams(text);
       for ngram in ngrams {
-        self.index.entry(ngram).or_insert_with(Vec::new).push(id);
+        self.index.entry(ngram).or_default().push(id);
       }
     }
   }
@@ -120,7 +120,7 @@ impl SearchEngine {
 
     let text_len = text.len();
     let pattern_len = pattern.len();
-    let max_mismatches = self.config.max_distance as usize;
+    let max_mismatches = self.config.max_distance;
 
     for i in 0..=text_len.saturating_sub(pattern_len) {
       let mut mismatches = 0;
