@@ -3,8 +3,8 @@
 #![cfg(target_arch = "wasm32")]
 
 extern crate wasm_bindgen_test;
-use haiku::SearchConfig;
-use haiku::SearchEngine;
+use haiku_search::SearchConfig;
+use haiku_search::SearchEngine;
 use serde_wasm_bindgen;
 use wasm_bindgen_test::*;
 
