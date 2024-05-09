@@ -1,12 +1,12 @@
 [package]
-name = "haiku"
+name = "haiku-search"
 version = "0.1.0"
 authors = ["Luis Cardoso <luis@luiscardoso.dev>"]
 edition = "2021"
 description = "A fast and memory-efficient fuzzy search library for text documents."
 readme = "README.md"
 license-file = "LICENSE"
-repository = "https://github.com/beowolx/haiku"
+repository = "https://github.com/beowolx/haiku-search"
 keywords = ["fuzzy", "search", "text", "document"]
 categories = ["fuzzy", "search", "text", "document"]
 
