@@ -63,6 +63,11 @@ You can see this chart live here: [Haiku-Search vs Fuse.js Benchmark Results](ht
 - Improve memory footprint
 - Improve code documentation
 
+## Roadmap
+- Add unicode support
+- Improve memory footprint
+- Improve code documentation
+
 ## Contributing
 Contributions to Haiku-Search are welcome! If you're looking to contribute, please:
 - Check out the current issues on GitHub, especially those tagged as "good first issue".
