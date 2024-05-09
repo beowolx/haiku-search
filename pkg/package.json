@@ -1,0 +1,17 @@
+{
+  "name": "haiku",
+  "collaborators": [
+    "Luis Cardoso <luis@luiscardoso.dev>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "haiku_bg.wasm",
+    "haiku.js",
+    "haiku.d.ts"
+  ],
+  "module": "haiku.js",
+  "types": "haiku.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
