@@ -17,12 +17,15 @@ impl SearchConfig {
       max_distance,
     }
   }
+
   pub fn generate_ngrams(&self, input: &str) -> Vec<String> {
-    let mut ngrams = Vec::new();
-    if self.ngram_size > 0 && input.len() >= self.ngram_size {
-      for i in 0..=input.len() - self.ngram_size {
-        ngrams.push(input[i..i + self.ngram_size].to_string());
-      }
+    if self.ngram_size == 0 || input.len() < self.ngram_size {
+      return Vec::new();
+    }
+
+    let mut ngrams = Vec::with_capacity(input.len() - self.ngram_size + 1);
+    for i in 0..=input.len() - self.ngram_size {
+      ngrams.push(input[i..i + self.ngram_size].to_string());
     }
     ngrams
   }
